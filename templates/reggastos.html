@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granja Sys - Registro de Gastos</title>
+</head>
+<body>
+    <h1>Registro de Gastos</h1>
+    <form id="formRegistro">
+        <input type="datetime-local" name="dt_gastos" id="dt_gastos" required>
+        <input type="text" name="qt_gastos" id="qt_gastos" placeholder="R$ 0.00" required>
+        <select name="tp_gastos" id="tp_gastos" required>
+            <option value="0" disabled hidden selected>Selecione um tipo de gasto</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Água">Água</option>
+            <option value="Energia">Energia</option>
+            <option value="Construção">Construção</option>
+            <option value="Materiais para Higiene">Materiais para Higiene</option>
+            <option value="Remédio">Remédio</option>
+            <option value="Suplementos">Suplementos</option>
+        </select>
+        <input type="button" value="Registrar" id="btnRegistrar">
+    </form>
+
+    <h2>Gastos Registrados</h2>
+    <table id="tabelagastos">
+        <tr>
+            <th>ID</th>
+            <th>Data e Hora</th>
+            <th>Valor</th>
+            <th>Tipo de Gasto</th>
+            <th>Deletar</th>
+        </tr>
+    </table>
+    <script src="../static/manip_form_reggastos.js"></script>
+</body>
+</html>

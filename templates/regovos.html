@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Granja Sys - Registro de Ovos</title>
+</head>
+<body>
+    <h1>Registro de Ovos</h1>
+    <form id="formRegistro">
+        <input type="number" name="qt_ovos" id="qt_ovos" required>
+        <input type="datetime-local" name="dt_ovos" id="dt_ovos" required>
+        <input type="button" value="Registrar" id="btnRegistrar">
+    </form>
+
+    <h2>Ovos Registrados</h2>
+    <table id="tabelaOvos">
+        <tr>
+            <th>ID</th>
+            <th>Data e Hora</th>
+            <th>Quantidade</th>
+            <th>Deletar</th>
+        </tr>
+    </table>
+    <script src="../static/manip_form_regovos.js"></script>
+</body>
+</html>
