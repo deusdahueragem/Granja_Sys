@@ -70,6 +70,23 @@ table tr {
 table tr th {
     padding: 3px 20px 3px 20px;
 }
+
+.c_total {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.c_total b {
+    margin-left: 5px;
+}
+
+td {
+    padding: 2px 5px 0px 5px;
+}
+
 /* --------- Fim Conteúdo --------- */
 
 @media screen and (max-width: 375px) {

@@ -71,6 +71,7 @@ function carregargastosRegistrados() {
             </tr>
         `;
 
+        var qt_totalgastos = 0;
         // Inserir os gastos registrados na tabela
         data.forEach(gasto => {
             const newRow = tabelagastos.insertRow();
@@ -85,7 +86,11 @@ function carregargastosRegistrados() {
                 <td>${gasto.tp_gastos}</td>
                 <td><button onclick="deletarGasto(${gasto.id_gastos})">Deletar</button></td>
             `;
+            qt_totalgastos = qt_totalgastos + gasto.qt_gastos;
         });
+        qt_totalgastos = qt_totalgastos.toString();
+        qt_totalgastos = formatCurrency(qt_totalgastos);
+        document.getElementById('qt_tgastos').textContent = qt_totalgastos;
     })
     .catch(error => console.error('Erro:', error));
 }

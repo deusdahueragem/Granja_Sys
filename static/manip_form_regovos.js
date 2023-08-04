@@ -16,6 +16,7 @@ function carregarOvosRegistrados() {
         `;
 
         // Inserir os ovos registrados na tabela
+        var qt_totalovos = 0;
         data.forEach(ovo => {
             const newRow = tabelaOvos.insertRow();
             newRow.innerHTML = `
@@ -24,7 +25,9 @@ function carregarOvosRegistrados() {
                 <td>${ovo.qt_ovos}</td>
                 <td><button onclick="deletarOvo(${ovo.id_regovos})">Deletar</button></td>
             `;
+            qt_totalovos = qt_totalovos + parseInt(ovo.qt_ovos)
         });
+        document.getElementById('qt_tovos').textContent = qt_totalovos;
     })
     .catch(error => console.error('Erro:', error));
 }

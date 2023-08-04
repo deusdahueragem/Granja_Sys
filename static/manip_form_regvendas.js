@@ -70,6 +70,7 @@ function carregarvendasRegistrados() {
             </tr>
         `;
 
+        var qt_totalvendas = 0;
         // Inserir as vendas registrados na tabela
         data.forEach(venda => {
             const newRow = tabelavendas.insertRow();
@@ -83,7 +84,11 @@ function carregarvendasRegistrados() {
                 <td>${valor_formatado}</td>
                 <td><button onclick="deletarvenda(${venda.id_vendas})">Deletar</button></td>
             `;
+            qt_totalvendas = qt_totalvendas + venda.vl_vendas;
         });
+        qt_totalvendas = qt_totalvendas.toString();
+        qt_totalvendas = formatCurrency(qt_totalvendas);
+        document.getElementById('qt_tvendas').textContent = qt_totalvendas;
     })
     .catch(error => console.error('Erro:', error));
 }
