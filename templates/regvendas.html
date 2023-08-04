@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Granja Sys - Registro de Ovos</title>
+    <title>Granja Sys - Registro de Vendas</title>
     <link rel="stylesheet" href="../static/visual/style.css">
 </head>
 <body>
     <div class="menu_topo">
-        <a href="#"><div class="button_cont  activate">Registro de Ovos</div></a>
+        <a href="/"><div class="button_cont">Registro de Ovos</div></a>
         <a href="/registro_gastos"><div class="button_cont">Registro de Gastos</div></a>
-        <a href="/registro_vendas"><div class="button_cont">Registro de Vendas</div></a>
+        <a href="#"><div class="button_cont activate">Registro de Vendas</div></a>
     </div>
     <div class="conteudo">
-        <h1>Registro de Ovos</h1>
+        <h1>Registro de Vendas</h1>
         <form id="formRegistro">
-            <input type="number" name="qt_ovos" id="qt_ovos" placeholder="Quantidade de Ovos" required>
-            <input type="datetime-local" name="dt_ovos" id="dt_ovos" required>
+            <input type="datetime-local" name="dt_vendas" id="dt_vendas" required>
+            <input type="text" name="vl_vendas" id="vl_vendas" placeholder="R$ 0.00" required>
             <input type="button" value="Registrar" id="btnRegistrar">
         </form>
 
-        <h2>Ovos Registrados</h2>
-        <table id="tabelaOvos">
+        <h2>Vendas Registradas</h2>
+        <table id="tabelavendas">
             <tr>
                 <th>ID</th>
                 <th>Data e Hora</th>
-                <th>Quantidade</th>
+                <th>Valor de Vendas</th>
                 <th>Deletar</th>
             </tr>
         </table>
     </div>
-    <script src="../static/manip_form_regovos.js"></script>
+    <script src="../static/manip_form_regvendas.js"></script>
 </body>
 </html>
