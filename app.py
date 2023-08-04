@@ -254,5 +254,9 @@ api.add_resource(TbVendasResource, '/tb_vendas', '/tb_vendas/<int:id_vendas>')
 def index():
     return render_template('regovos.html')
 
+@app.route('/registro_gastos')
+def registro_gastos():
+    return render_template('reggastos.html')
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
