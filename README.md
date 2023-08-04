@@ -25,20 +25,20 @@ Granja Sys é um sistema projetado para simplificar o controle de uma mini granj
 
 Inclua algumas capturas de tela abaixo para demonstrar a interface do software:
 
-![Tela de Registro de Ovos](https://uploaddeimagens.com.br/imagens/bzl5lQg)
+![Tela de Registro de Ovos](https://uploaddeimagens.com.br/images/004/567/177/original/granjasys_regovos.png)
 *Figura 1: Tela de Registro de Ovos.*
 
-![Tela de Registro de Gastos](https://drive.google.com/file/d/1HYi1UHcEVsUzpiefEMTlbyC-sKa2wcAh/preview)
+![Tela de Registro de Gastos](https://uploaddeimagens.com.br/images/004/567/180/original/granjasys_reggastos.png)
 *Figura 2: Tela de Registro de Gastos.*
 
-![Tela de Registro de Vendas](https://drive.google.com/file/d/1AVS7IJKaQjDabOiZ8wh5qP0QFVSEqfwf/preview)
+![Tela de Registro de Vendas](https://uploaddeimagens.com.br/images/004/567/181/original/granjasys_regvendas.png)
 *Figura 3: Tela de Registro de Vendas.*
 
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter os seguintes pré-requisitos:
 
-- Python instalado (versão X.Y.Z)
+- Python instalado
 - Bibliotecas: Flask, Flask_restful, Flask-cors e Sqlalchemy (instaladas via `pip install nome_da_biblioteca`)
 
 ## Instalação
