@@ -25,7 +25,7 @@ Granja Sys é um sistema projetado para simplificar o controle de uma mini granj
 
 Inclua algumas capturas de tela abaixo para demonstrar a interface do software:
 
-![Tela de Registro de Ovos](https://drive.google.com/file/d/1TnbHtTzXxdu7nrmhUFNgZD_UXeDUSKsa/preview)
+![Tela de Registro de Ovos](https://uploaddeimagens.com.br/imagens/bzl5lQg)
 *Figura 1: Tela de Registro de Ovos.*
 
 ![Tela de Registro de Gastos](https://drive.google.com/file/d/1HYi1UHcEVsUzpiefEMTlbyC-sKa2wcAh/preview)
