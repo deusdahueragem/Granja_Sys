@@ -56,7 +56,7 @@ function formatCurrency(inputString) {
 // Função para carregar os gastos registrados na tabela
 function carregargastosRegistrados() {
     // Realizar a requisição GET para a API (usando Fetch API)
-    fetch('http://127.0.0.1/tb_gastos')
+    fetch('http://192.168.3.7/tb_gastos')
     .then(response => response.json())
     .then(data => {
         // Limpar a tabela para inserir os ngastos dados
@@ -96,7 +96,7 @@ carregargastosRegistrados();
 // Função para deletar um registro de gasto
 function deletarGasto(id) {
     // Realizar a requisição DELETE para a API (usando Fetch API)
-    fetch(`http://127.0.0.1/tb_gastos/${id}`, {
+    fetch(`http://192.168.3.7/tb_gastos/${id}`, {
         method: 'DELETE'
     })
     .then(response => {
@@ -145,7 +145,7 @@ document.getElementById('btnRegistrar').addEventListener('click', function() {
     };
 
     // Restante do código para enviar os dados ao servidor
-    fetch('http://127.0.0.1/tb_gastos', {
+    fetch('http://192.168.3.7/tb_gastos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
